@@ -13,7 +13,81 @@
 		FF34E736225609F400AC1B83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF34E735225609F400AC1B83 /* Assets.xcassets */; };
 		FF34E739225609F400AC1B83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF34E737225609F400AC1B83 /* LaunchScreen.storyboard */; };
 		FF4542082258DD46006D9E7E /* SimpleBounce.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4542072258DD46006D9E7E /* SimpleBounce.swift */; };
+		FF4542122258F797006D9E7E /* AthleteMinderUI.h in Headers */ = {isa = PBXBuildFile; fileRef = FF4542102258F797006D9E7E /* AthleteMinderUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FF4542152258F797006D9E7E /* AthleteMinderUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF45420E2258F797006D9E7E /* AthleteMinderUI.framework */; };
+		FF4542162258F797006D9E7E /* AthleteMinderUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FF45420E2258F797006D9E7E /* AthleteMinderUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FF45421C2258F7AD006D9E7E /* AMColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF45421B2258F7AD006D9E7E /* AMColor.swift */; };
+		FF45421E2258F87A006D9E7E /* UIColor+RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF45421D2258F87A006D9E7E /* UIColor+RGB.swift */; };
+		FF4542202258FCF7006D9E7E /* AMFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF45421F2258FCF7006D9E7E /* AMFont.swift */; };
+		FF4542382258FD95006D9E7E /* DINNextLTPro-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF4542222258FD94006D9E7E /* DINNextLTPro-BoldItalic.otf */; };
+		FF4542392258FD95006D9E7E /* DINNextLTPro-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF4542222258FD94006D9E7E /* DINNextLTPro-BoldItalic.otf */; };
+		FF45423A2258FD95006D9E7E /* DINNextLTPro-UltraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF4542232258FD94006D9E7E /* DINNextLTPro-UltraLight.otf */; };
+		FF45423B2258FD95006D9E7E /* DINNextLTPro-UltraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF4542232258FD94006D9E7E /* DINNextLTPro-UltraLight.otf */; };
+		FF45423C2258FD95006D9E7E /* DINNextLTPro-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF4542242258FD94006D9E7E /* DINNextLTPro-Bold.otf */; };
+		FF45423D2258FD95006D9E7E /* DINNextLTPro-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF4542242258FD94006D9E7E /* DINNextLTPro-Bold.otf */; };
+		FF45423E2258FD95006D9E7E /* DINNextLTPro-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF4542252258FD94006D9E7E /* DINNextLTPro-Heavy.otf */; };
+		FF45423F2258FD95006D9E7E /* DINNextLTPro-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF4542252258FD94006D9E7E /* DINNextLTPro-Heavy.otf */; };
+		FF4542402258FD95006D9E7E /* DINNextLTPro-UltraLightIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF4542262258FD94006D9E7E /* DINNextLTPro-UltraLightIt.otf */; };
+		FF4542412258FD95006D9E7E /* DINNextLTPro-UltraLightIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF4542262258FD94006D9E7E /* DINNextLTPro-UltraLightIt.otf */; };
+		FF4542422258FD95006D9E7E /* DINNextLTPro-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF4542272258FD94006D9E7E /* DINNextLTPro-MediumItalic.otf */; };
+		FF4542432258FD95006D9E7E /* DINNextLTPro-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF4542272258FD94006D9E7E /* DINNextLTPro-MediumItalic.otf */; };
+		FF4542442258FD95006D9E7E /* DINNextLTPro-HeavyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF4542282258FD94006D9E7E /* DINNextLTPro-HeavyItalic.otf */; };
+		FF4542452258FD95006D9E7E /* DINNextLTPro-HeavyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF4542282258FD94006D9E7E /* DINNextLTPro-HeavyItalic.otf */; };
+		FF4542462258FD95006D9E7E /* DINNextLTPro-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF4542292258FD94006D9E7E /* DINNextLTPro-BlackItalic.otf */; };
+		FF4542472258FD95006D9E7E /* DINNextLTPro-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF4542292258FD94006D9E7E /* DINNextLTPro-BlackItalic.otf */; };
+		FF4542482258FD95006D9E7E /* DINNextLTPro-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF45422A2258FD94006D9E7E /* DINNextLTPro-Italic.otf */; };
+		FF4542492258FD95006D9E7E /* DINNextLTPro-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF45422A2258FD94006D9E7E /* DINNextLTPro-Italic.otf */; };
+		FF45424A2258FD95006D9E7E /* DINNextLTPro-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF45422B2258FD94006D9E7E /* DINNextLTPro-Black.otf */; };
+		FF45424B2258FD95006D9E7E /* DINNextLTPro-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF45422B2258FD94006D9E7E /* DINNextLTPro-Black.otf */; };
+		FF45424C2258FD95006D9E7E /* DINNextLTPro-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF45422C2258FD95006D9E7E /* DINNextLTPro-Light.otf */; };
+		FF45424D2258FD95006D9E7E /* DINNextLTPro-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF45422C2258FD95006D9E7E /* DINNextLTPro-Light.otf */; };
+		FF45424E2258FD95006D9E7E /* DINNextLTPro-Condensed.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF45422D2258FD95006D9E7E /* DINNextLTPro-Condensed.otf */; };
+		FF45424F2258FD95006D9E7E /* DINNextLTPro-Condensed.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF45422D2258FD95006D9E7E /* DINNextLTPro-Condensed.otf */; };
+		FF4542502258FD95006D9E7E /* DINNextLTPro-BlackCondensed.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF45422E2258FD95006D9E7E /* DINNextLTPro-BlackCondensed.otf */; };
+		FF4542512258FD95006D9E7E /* DINNextLTPro-BlackCondensed.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF45422E2258FD95006D9E7E /* DINNextLTPro-BlackCondensed.otf */; };
+		FF4542522258FD95006D9E7E /* DINNextLTPro-MediumCond.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF45422F2258FD95006D9E7E /* DINNextLTPro-MediumCond.otf */; };
+		FF4542532258FD95006D9E7E /* DINNextLTPro-MediumCond.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF45422F2258FD95006D9E7E /* DINNextLTPro-MediumCond.otf */; };
+		FF4542542258FD95006D9E7E /* DINNextLTPro-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF4542302258FD95006D9E7E /* DINNextLTPro-LightItalic.otf */; };
+		FF4542552258FD95006D9E7E /* DINNextLTPro-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF4542302258FD95006D9E7E /* DINNextLTPro-LightItalic.otf */; };
+		FF4542562258FD95006D9E7E /* DINNextLTPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF4542312258FD95006D9E7E /* DINNextLTPro-Regular.otf */; };
+		FF4542572258FD95006D9E7E /* DINNextLTPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF4542312258FD95006D9E7E /* DINNextLTPro-Regular.otf */; };
+		FF4542582258FD95006D9E7E /* DINNextLTPro-BoldCondensed.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF4542322258FD95006D9E7E /* DINNextLTPro-BoldCondensed.otf */; };
+		FF4542592258FD95006D9E7E /* DINNextLTPro-BoldCondensed.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF4542322258FD95006D9E7E /* DINNextLTPro-BoldCondensed.otf */; };
+		FF45425A2258FD95006D9E7E /* DINNextLTPro-HeavyCondensed.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF4542332258FD95006D9E7E /* DINNextLTPro-HeavyCondensed.otf */; };
+		FF45425B2258FD95006D9E7E /* DINNextLTPro-HeavyCondensed.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF4542332258FD95006D9E7E /* DINNextLTPro-HeavyCondensed.otf */; };
+		FF45425C2258FD95006D9E7E /* BebasNeue.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF4542342258FD95006D9E7E /* BebasNeue.otf */; };
+		FF45425D2258FD95006D9E7E /* BebasNeue.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF4542342258FD95006D9E7E /* BebasNeue.otf */; };
+		FF45425E2258FD95006D9E7E /* DINNextLTPro-LightCondensed.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF4542352258FD95006D9E7E /* DINNextLTPro-LightCondensed.otf */; };
+		FF45425F2258FD95006D9E7E /* DINNextLTPro-LightCondensed.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF4542352258FD95006D9E7E /* DINNextLTPro-LightCondensed.otf */; };
+		FF4542602258FD95006D9E7E /* DINNextLTPro-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF4542362258FD95006D9E7E /* DINNextLTPro-Medium.otf */; };
+		FF4542612258FD95006D9E7E /* DINNextLTPro-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF4542362258FD95006D9E7E /* DINNextLTPro-Medium.otf */; };
+		FF4542622258FD95006D9E7E /* DINNextLTPro-UltraLightCond.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF4542372258FD95006D9E7E /* DINNextLTPro-UltraLightCond.otf */; };
+		FF4542632258FD95006D9E7E /* DINNextLTPro-UltraLightCond.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF4542372258FD95006D9E7E /* DINNextLTPro-UltraLightCond.otf */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF4542132258F797006D9E7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF34E723225609F100AC1B83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF45420D2258F797006D9E7E;
+			remoteInfo = AthleteMinderUI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FF45421A2258F797006D9E7E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FF4542162258F797006D9E7E /* AthleteMinderUI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FF34E72B225609F200AC1B83 /* AthleteMinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AthleteMinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +98,46 @@
 		FF34E738225609F400AC1B83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF34E73A225609F400AC1B83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF4542072258DD46006D9E7E /* SimpleBounce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleBounce.swift; sourceTree = "<group>"; };
+		FF45420E2258F797006D9E7E /* AthleteMinderUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AthleteMinderUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF4542102258F797006D9E7E /* AthleteMinderUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AthleteMinderUI.h; sourceTree = "<group>"; };
+		FF4542112258F797006D9E7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF45421B2258F7AD006D9E7E /* AMColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMColor.swift; sourceTree = "<group>"; };
+		FF45421D2258F87A006D9E7E /* UIColor+RGB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+RGB.swift"; sourceTree = "<group>"; };
+		FF45421F2258FCF7006D9E7E /* AMFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMFont.swift; sourceTree = "<group>"; };
+		FF4542222258FD94006D9E7E /* DINNextLTPro-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINNextLTPro-BoldItalic.otf"; sourceTree = "<group>"; };
+		FF4542232258FD94006D9E7E /* DINNextLTPro-UltraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINNextLTPro-UltraLight.otf"; sourceTree = "<group>"; };
+		FF4542242258FD94006D9E7E /* DINNextLTPro-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINNextLTPro-Bold.otf"; sourceTree = "<group>"; };
+		FF4542252258FD94006D9E7E /* DINNextLTPro-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINNextLTPro-Heavy.otf"; sourceTree = "<group>"; };
+		FF4542262258FD94006D9E7E /* DINNextLTPro-UltraLightIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINNextLTPro-UltraLightIt.otf"; sourceTree = "<group>"; };
+		FF4542272258FD94006D9E7E /* DINNextLTPro-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINNextLTPro-MediumItalic.otf"; sourceTree = "<group>"; };
+		FF4542282258FD94006D9E7E /* DINNextLTPro-HeavyItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINNextLTPro-HeavyItalic.otf"; sourceTree = "<group>"; };
+		FF4542292258FD94006D9E7E /* DINNextLTPro-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINNextLTPro-BlackItalic.otf"; sourceTree = "<group>"; };
+		FF45422A2258FD94006D9E7E /* DINNextLTPro-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINNextLTPro-Italic.otf"; sourceTree = "<group>"; };
+		FF45422B2258FD94006D9E7E /* DINNextLTPro-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINNextLTPro-Black.otf"; sourceTree = "<group>"; };
+		FF45422C2258FD95006D9E7E /* DINNextLTPro-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINNextLTPro-Light.otf"; sourceTree = "<group>"; };
+		FF45422D2258FD95006D9E7E /* DINNextLTPro-Condensed.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINNextLTPro-Condensed.otf"; sourceTree = "<group>"; };
+		FF45422E2258FD95006D9E7E /* DINNextLTPro-BlackCondensed.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINNextLTPro-BlackCondensed.otf"; sourceTree = "<group>"; };
+		FF45422F2258FD95006D9E7E /* DINNextLTPro-MediumCond.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINNextLTPro-MediumCond.otf"; sourceTree = "<group>"; };
+		FF4542302258FD95006D9E7E /* DINNextLTPro-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINNextLTPro-LightItalic.otf"; sourceTree = "<group>"; };
+		FF4542312258FD95006D9E7E /* DINNextLTPro-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINNextLTPro-Regular.otf"; sourceTree = "<group>"; };
+		FF4542322258FD95006D9E7E /* DINNextLTPro-BoldCondensed.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINNextLTPro-BoldCondensed.otf"; sourceTree = "<group>"; };
+		FF4542332258FD95006D9E7E /* DINNextLTPro-HeavyCondensed.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINNextLTPro-HeavyCondensed.otf"; sourceTree = "<group>"; };
+		FF4542342258FD95006D9E7E /* BebasNeue.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BebasNeue.otf; sourceTree = "<group>"; };
+		FF4542352258FD95006D9E7E /* DINNextLTPro-LightCondensed.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINNextLTPro-LightCondensed.otf"; sourceTree = "<group>"; };
+		FF4542362258FD95006D9E7E /* DINNextLTPro-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINNextLTPro-Medium.otf"; sourceTree = "<group>"; };
+		FF4542372258FD95006D9E7E /* DINNextLTPro-UltraLightCond.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINNextLTPro-UltraLightCond.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		FF34E728225609F100AC1B83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF4542152258F797006D9E7E /* AthleteMinderUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF45420B2258F797006D9E7E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +151,8 @@
 			isa = PBXGroup;
 			children = (
 				FF34E72D225609F200AC1B83 /* AthleteMinder */,
+				FF4542212258FD71006D9E7E /* Resources */,
+				FF45420F2258F797006D9E7E /* AthleteMinderUI */,
 				FF34E72C225609F200AC1B83 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				FF34E72B225609F200AC1B83 /* AthleteMinder.app */,
+				FF45420E2258F797006D9E7E /* AthleteMinderUI.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,7 +180,59 @@
 			path = AthleteMinder;
 			sourceTree = "<group>";
 		};
+		FF45420F2258F797006D9E7E /* AthleteMinderUI */ = {
+			isa = PBXGroup;
+			children = (
+				FF4542102258F797006D9E7E /* AthleteMinderUI.h */,
+				FF4542112258F797006D9E7E /* Info.plist */,
+				FF45421B2258F7AD006D9E7E /* AMColor.swift */,
+				FF45421F2258FCF7006D9E7E /* AMFont.swift */,
+				FF45421D2258F87A006D9E7E /* UIColor+RGB.swift */,
+			);
+			path = AthleteMinderUI;
+			sourceTree = "<group>";
+		};
+		FF4542212258FD71006D9E7E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FF4542342258FD95006D9E7E /* BebasNeue.otf */,
+				FF45422B2258FD94006D9E7E /* DINNextLTPro-Black.otf */,
+				FF45422E2258FD95006D9E7E /* DINNextLTPro-BlackCondensed.otf */,
+				FF4542292258FD94006D9E7E /* DINNextLTPro-BlackItalic.otf */,
+				FF4542242258FD94006D9E7E /* DINNextLTPro-Bold.otf */,
+				FF4542322258FD95006D9E7E /* DINNextLTPro-BoldCondensed.otf */,
+				FF4542222258FD94006D9E7E /* DINNextLTPro-BoldItalic.otf */,
+				FF45422D2258FD95006D9E7E /* DINNextLTPro-Condensed.otf */,
+				FF4542252258FD94006D9E7E /* DINNextLTPro-Heavy.otf */,
+				FF4542332258FD95006D9E7E /* DINNextLTPro-HeavyCondensed.otf */,
+				FF4542282258FD94006D9E7E /* DINNextLTPro-HeavyItalic.otf */,
+				FF45422A2258FD94006D9E7E /* DINNextLTPro-Italic.otf */,
+				FF45422C2258FD95006D9E7E /* DINNextLTPro-Light.otf */,
+				FF4542352258FD95006D9E7E /* DINNextLTPro-LightCondensed.otf */,
+				FF4542302258FD95006D9E7E /* DINNextLTPro-LightItalic.otf */,
+				FF4542362258FD95006D9E7E /* DINNextLTPro-Medium.otf */,
+				FF45422F2258FD95006D9E7E /* DINNextLTPro-MediumCond.otf */,
+				FF4542272258FD94006D9E7E /* DINNextLTPro-MediumItalic.otf */,
+				FF4542312258FD95006D9E7E /* DINNextLTPro-Regular.otf */,
+				FF4542232258FD94006D9E7E /* DINNextLTPro-UltraLight.otf */,
+				FF4542372258FD95006D9E7E /* DINNextLTPro-UltraLightCond.otf */,
+				FF4542262258FD94006D9E7E /* DINNextLTPro-UltraLightIt.otf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		FF4542092258F797006D9E7E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF4542122258F797006D9E7E /* AthleteMinderUI.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		FF34E72A225609F100AC1B83 /* AthleteMinder */ = {
@@ -77,15 +242,35 @@
 				FF34E727225609F100AC1B83 /* Sources */,
 				FF34E728225609F100AC1B83 /* Frameworks */,
 				FF34E729225609F100AC1B83 /* Resources */,
+				FF45421A2258F797006D9E7E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FF4542142258F797006D9E7E /* PBXTargetDependency */,
 			);
 			name = AthleteMinder;
 			productName = AthleteMinder;
 			productReference = FF34E72B225609F200AC1B83 /* AthleteMinder.app */;
 			productType = "com.apple.product-type.application";
+		};
+		FF45420D2258F797006D9E7E /* AthleteMinderUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF4542172258F797006D9E7E /* Build configuration list for PBXNativeTarget "AthleteMinderUI" */;
+			buildPhases = (
+				FF4542092258F797006D9E7E /* Headers */,
+				FF45420A2258F797006D9E7E /* Sources */,
+				FF45420B2258F797006D9E7E /* Frameworks */,
+				FF45420C2258F797006D9E7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AthleteMinderUI;
+			productName = AthleteMinderUI;
+			productReference = FF45420E2258F797006D9E7E /* AthleteMinderUI.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -99,6 +284,10 @@
 				TargetAttributes = {
 					FF34E72A225609F100AC1B83 = {
 						CreatedOnToolsVersion = 10.2;
+					};
+					FF45420D2258F797006D9E7E = {
+						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -116,6 +305,7 @@
 			projectRoot = "";
 			targets = (
 				FF34E72A225609F100AC1B83 /* AthleteMinder */,
+				FF45420D2258F797006D9E7E /* AthleteMinderUI */,
 			);
 		};
 /* End PBXProject section */
@@ -125,9 +315,60 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF4542482258FD95006D9E7E /* DINNextLTPro-Italic.otf in Resources */,
+				FF4542542258FD95006D9E7E /* DINNextLTPro-LightItalic.otf in Resources */,
+				FF45423E2258FD95006D9E7E /* DINNextLTPro-Heavy.otf in Resources */,
+				FF4542402258FD95006D9E7E /* DINNextLTPro-UltraLightIt.otf in Resources */,
+				FF45425E2258FD95006D9E7E /* DINNextLTPro-LightCondensed.otf in Resources */,
+				FF4542522258FD95006D9E7E /* DINNextLTPro-MediumCond.otf in Resources */,
+				FF45425A2258FD95006D9E7E /* DINNextLTPro-HeavyCondensed.otf in Resources */,
+				FF45425C2258FD95006D9E7E /* BebasNeue.otf in Resources */,
+				FF4542582258FD95006D9E7E /* DINNextLTPro-BoldCondensed.otf in Resources */,
+				FF45424A2258FD95006D9E7E /* DINNextLTPro-Black.otf in Resources */,
+				FF4542422258FD95006D9E7E /* DINNextLTPro-MediumItalic.otf in Resources */,
 				FF34E739225609F400AC1B83 /* LaunchScreen.storyboard in Resources */,
+				FF4542622258FD95006D9E7E /* DINNextLTPro-UltraLightCond.otf in Resources */,
+				FF4542382258FD95006D9E7E /* DINNextLTPro-BoldItalic.otf in Resources */,
 				FF34E736225609F400AC1B83 /* Assets.xcassets in Resources */,
+				FF4542442258FD95006D9E7E /* DINNextLTPro-HeavyItalic.otf in Resources */,
+				FF4542462258FD95006D9E7E /* DINNextLTPro-BlackItalic.otf in Resources */,
+				FF4542562258FD95006D9E7E /* DINNextLTPro-Regular.otf in Resources */,
+				FF45423C2258FD95006D9E7E /* DINNextLTPro-Bold.otf in Resources */,
 				FF34E734225609F200AC1B83 /* Main.storyboard in Resources */,
+				FF45423A2258FD95006D9E7E /* DINNextLTPro-UltraLight.otf in Resources */,
+				FF45424E2258FD95006D9E7E /* DINNextLTPro-Condensed.otf in Resources */,
+				FF4542502258FD95006D9E7E /* DINNextLTPro-BlackCondensed.otf in Resources */,
+				FF45424C2258FD95006D9E7E /* DINNextLTPro-Light.otf in Resources */,
+				FF4542602258FD95006D9E7E /* DINNextLTPro-Medium.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF45420C2258F797006D9E7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF45424B2258FD95006D9E7E /* DINNextLTPro-Black.otf in Resources */,
+				FF4542452258FD95006D9E7E /* DINNextLTPro-HeavyItalic.otf in Resources */,
+				FF4542612258FD95006D9E7E /* DINNextLTPro-Medium.otf in Resources */,
+				FF4542412258FD95006D9E7E /* DINNextLTPro-UltraLightIt.otf in Resources */,
+				FF4542632258FD95006D9E7E /* DINNextLTPro-UltraLightCond.otf in Resources */,
+				FF45424D2258FD95006D9E7E /* DINNextLTPro-Light.otf in Resources */,
+				FF45424F2258FD95006D9E7E /* DINNextLTPro-Condensed.otf in Resources */,
+				FF4542592258FD95006D9E7E /* DINNextLTPro-BoldCondensed.otf in Resources */,
+				FF45423D2258FD95006D9E7E /* DINNextLTPro-Bold.otf in Resources */,
+				FF45423B2258FD95006D9E7E /* DINNextLTPro-UltraLight.otf in Resources */,
+				FF4542552258FD95006D9E7E /* DINNextLTPro-LightItalic.otf in Resources */,
+				FF45425F2258FD95006D9E7E /* DINNextLTPro-LightCondensed.otf in Resources */,
+				FF45425D2258FD95006D9E7E /* BebasNeue.otf in Resources */,
+				FF4542532258FD95006D9E7E /* DINNextLTPro-MediumCond.otf in Resources */,
+				FF4542572258FD95006D9E7E /* DINNextLTPro-Regular.otf in Resources */,
+				FF45423F2258FD95006D9E7E /* DINNextLTPro-Heavy.otf in Resources */,
+				FF4542392258FD95006D9E7E /* DINNextLTPro-BoldItalic.otf in Resources */,
+				FF4542492258FD95006D9E7E /* DINNextLTPro-Italic.otf in Resources */,
+				FF45425B2258FD95006D9E7E /* DINNextLTPro-HeavyCondensed.otf in Resources */,
+				FF4542472258FD95006D9E7E /* DINNextLTPro-BlackItalic.otf in Resources */,
+				FF4542512258FD95006D9E7E /* DINNextLTPro-BlackCondensed.otf in Resources */,
+				FF4542432258FD95006D9E7E /* DINNextLTPro-MediumItalic.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +385,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FF45420A2258F797006D9E7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF4542202258FCF7006D9E7E /* AMFont.swift in Sources */,
+				FF45421C2258F7AD006D9E7E /* AMColor.swift in Sources */,
+				FF45421E2258F87A006D9E7E /* UIColor+RGB.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF4542142258F797006D9E7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF45420D2258F797006D9E7E /* AthleteMinderUI */;
+			targetProxy = FF4542132258F797006D9E7E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FF34E732225609F200AC1B83 /* Main.storyboard */ = {
@@ -285,6 +544,7 @@
 		FF34E73E225609F400AC1B83 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RD7HUSH4T7;
@@ -303,6 +563,7 @@
 		FF34E73F225609F400AC1B83 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RD7HUSH4T7;
@@ -315,6 +576,65 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FF4542182258F797006D9E7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = RD7HUSH4T7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = AthleteMinderUI/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.azhar.AthleteMinderUI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FF4542192258F797006D9E7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = RD7HUSH4T7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = AthleteMinderUI/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.azhar.AthleteMinderUI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -335,6 +655,15 @@
 			buildConfigurations = (
 				FF34E73E225609F400AC1B83 /* Debug */,
 				FF34E73F225609F400AC1B83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF4542172258F797006D9E7E /* Build configuration list for PBXNativeTarget "AthleteMinderUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF4542182258F797006D9E7E /* Debug */,
+				FF4542192258F797006D9E7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

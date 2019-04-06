@@ -17,8 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow()
         window?.makeKeyAndVisible()
-//        window?.rootViewController = ViewController()
-        window?.rootViewController = SimpleBounce()
+        window?.rootViewController = ViewController()
+//        window?.rootViewController = SimpleBounce()
         
         return true
     }
