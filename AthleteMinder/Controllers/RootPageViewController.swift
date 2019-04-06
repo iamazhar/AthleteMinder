@@ -46,6 +46,21 @@ class RootPageViewController: UIPageViewController, UIPageViewControllerDelegate
         button.setImage(#imageLiteral(resourceName: "ICON-Next-Training-Tap"), for: .normal)
         return button
     }()
+    
+    lazy var dotView: UIView = {
+        let v = UIView(frame: CGRect(origin: .zero, size: CGSize(width: 24, height: 24)))
+        v.layer.cornerRadius = 24
+        
+        let gradientLayer = CAGradientLayer()
+        let topColor = #colorLiteral(red: 0.2431372549, green: 0.8156862745, blue: 0.3921568627, alpha: 1)
+        let bottomColor = #colorLiteral(red: 0.3607843137, green: 0.7921568627, blue: 0.5647058824, alpha: 1)
+        
+        gradientLayer.colors = [topColor.cgColor, bottomColor.cgColor]
+        gradientLayer.locations = [0, 1]
+        v.layer.addSublayer(gradientLayer)
+        gradientLayer.frame = v.bounds
+        return v
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,10 +76,12 @@ class RootPageViewController: UIPageViewController, UIPageViewControllerDelegate
     }
     
     fileprivate func setupLayout() {
+        
         view.addSubview(navBarView)
-        view.addSubview(trainingTitleLabel)
-        view.addSubview(previousQuestionButton)
-        view.addSubview(nextQuestionButton)
+        navBarView.addSubview(trainingTitleLabel)
+        navBarView.addSubview(previousQuestionButton)
+        navBarView.addSubview(nextQuestionButton)
+        navBarView.addSubview(dotView)
         
         navBarView.anchor(top: view.topAnchor, leading: view.leadingAnchor, bottom: nil, trailing: view.trailingAnchor, padding: .zero, size: .init(width: 0, height: 100))
         
@@ -77,6 +94,11 @@ class RootPageViewController: UIPageViewController, UIPageViewControllerDelegate
         
         nextQuestionButton.anchor(top: nil, leading: nil, bottom: nil, trailing: navBarView.trailingAnchor, padding: .zero, size: .init(width: 64, height: 64))
         nextQuestionButton.centerYAnchor.constraint(equalTo: navBarView.centerYAnchor).isActive = true
+        
+        dotView.anchor(top: trainingTitleLabel.bottomAnchor, leading: nil, bottom: nil, trailing: nil)
+        dotView.centerXAnchor.constraint(equalTo: navBarView.centerXAnchor).isActive = true
+        
+        
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
