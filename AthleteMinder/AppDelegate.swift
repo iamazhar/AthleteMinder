@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow()
         window?.makeKeyAndVisible()
-        window?.rootViewController = ViewController()
+        window?.rootViewController = RootPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal, options: [:])
 //        window?.rootViewController = SimpleBounce()
         
         return true

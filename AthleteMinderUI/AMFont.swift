@@ -177,13 +177,13 @@ public enum AMFontSize {
     public var value: CGFloat {
         switch self {
         case .small:
-            return 11
-        case .average:
             return 14
+        case .average:
+            return 18
         case .large:
-            return 17
+            return 24
         case .larger:
-            return 20
+            return 28
         }
     }
 }

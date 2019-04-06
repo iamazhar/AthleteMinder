@@ -19,7 +19,7 @@ public enum AMColor {
         case .navigationBarBackground:
             return UIColor.AMColorFrom(r: 40, g: 41, b: 44)
         case .background:
-            return UIColor.AMColorFrom(r: 38, g: 39, b: 43)
+            return UIColor.AMColorFrom(r: 48, g: 49, b: 53)
         case .primaryText:
             return UIColor.AMColorFrom(r: 248, g: 249, b: 250)
         case .secondaryText:
