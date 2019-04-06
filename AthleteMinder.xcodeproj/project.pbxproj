@@ -12,6 +12,7 @@
 		FF34E734225609F200AC1B83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF34E732225609F200AC1B83 /* Main.storyboard */; };
 		FF34E736225609F400AC1B83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF34E735225609F400AC1B83 /* Assets.xcassets */; };
 		FF34E739225609F400AC1B83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF34E737225609F400AC1B83 /* LaunchScreen.storyboard */; };
+		FF440CF12259415600614507 /* Extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF440CF02259415600614507 /* Extension+UIView.swift */; };
 		FF4542082258DD46006D9E7E /* SimpleBounce.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4542072258DD46006D9E7E /* SimpleBounce.swift */; };
 		FF4542122258F797006D9E7E /* AthleteMinderUI.h in Headers */ = {isa = PBXBuildFile; fileRef = FF4542102258F797006D9E7E /* AthleteMinderUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FF4542152258F797006D9E7E /* AthleteMinderUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF45420E2258F797006D9E7E /* AthleteMinderUI.framework */; };
@@ -97,6 +98,7 @@
 		FF34E735225609F400AC1B83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF34E738225609F400AC1B83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF34E73A225609F400AC1B83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF440CF02259415600614507 /* Extension+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIView.swift"; sourceTree = "<group>"; };
 		FF4542072258DD46006D9E7E /* SimpleBounce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleBounce.swift; sourceTree = "<group>"; };
 		FF45420E2258F797006D9E7E /* AthleteMinderUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AthleteMinderUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF4542102258F797006D9E7E /* AthleteMinderUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AthleteMinderUI.h; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 				FF34E72E225609F200AC1B83 /* AppDelegate.swift */,
 				FF4542072258DD46006D9E7E /* SimpleBounce.swift */,
 				FF34E730225609F200AC1B83 /* ViewController.swift */,
+				FF440CF02259415600614507 /* Extension+UIView.swift */,
 				FF34E732225609F200AC1B83 /* Main.storyboard */,
 				FF34E735225609F400AC1B83 /* Assets.xcassets */,
 				FF34E737225609F400AC1B83 /* LaunchScreen.storyboard */,
@@ -381,6 +384,7 @@
 			files = (
 				FF4542082258DD46006D9E7E /* SimpleBounce.swift in Sources */,
 				FF34E731225609F200AC1B83 /* ViewController.swift in Sources */,
+				FF440CF12259415600614507 /* Extension+UIView.swift in Sources */,
 				FF34E72F225609F200AC1B83 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

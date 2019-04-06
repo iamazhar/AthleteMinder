@@ -9,21 +9,17 @@
 import UIKit
 import AthleteMinderUI
 
-extension UIView {
-    func dg_center(usePresentationLayerIfPossible: Bool) -> CGPoint {
-        if usePresentationLayerIfPossible, let presentationLayer = layer.presentation() {
-            return presentationLayer.position
-        }
-        return center
-    }
-}
-
 class ViewController: UIViewController {
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
     
     private let minimalHeight: CGFloat = UIScreen.main.bounds.height - 64
     private let maxWaveHeight: CGFloat = 200.0
     
     private let shapeLayer = CAShapeLayer()
+    private let gradientLayer = CAGradientLayer()
     
     private var displayLink: CADisplayLink!
     
@@ -48,47 +44,12 @@ class ViewController: UIViewController {
         
         setupGradientLayer()
         
-        shapeLayer.frame = CGRect(x: 0, y: 0, width: view.bounds.width, height: minimalHeight)
-        shapeLayer.fillColor = AMColor.background.color.cgColor
-        
-        shapeLayer.actions = ["position": NSNull(), "bounds": NSNull(), "path": NSNull()]
-        view.layer.addSublayer(shapeLayer)
-        
-        view.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(handlePan)))
-        
-        l3ControlPointView.frame = CGRect(x: 0.0, y: 0.0, width: 3.0, height: 3.0)
-        l2ControlPointView.frame = CGRect(x: 0.0, y: 0.0, width: 3.0, height: 3.0)
-        l1ControlPointView.frame = CGRect(x: 0.0, y: 0.0, width: 3.0, height: 3.0)
-        cControlPointView.frame = CGRect(x: 0.0, y: 0.0, width: 3.0, height: 3.0)
-        r1ControlPointView.frame = CGRect(x: 0.0, y: 0.0, width: 3.0, height: 3.0)
-        r2ControlPointView.frame = CGRect(x: 0.0, y: 0.0, width: 3.0, height: 3.0)
-        r3ControlPointView.frame = CGRect(x: 0.0, y: 0.0, width: 3.0, height: 3.0)
-        
-//        l3ControlPointView.backgroundColor = .red
-//        l2ControlPointView.backgroundColor = .red
-//        l1ControlPointView.backgroundColor = .red
-//        cControlPointView.backgroundColor = .red
-//        r1ControlPointView.backgroundColor = .red
-//        r2ControlPointView.backgroundColor = .red
-//        r3ControlPointView.backgroundColor = .red
-        
-        view.addSubview(l3ControlPointView)
-        view.addSubview(l2ControlPointView)
-        view.addSubview(l1ControlPointView)
-        view.addSubview(cControlPointView)
-        view.addSubview(r1ControlPointView)
-        view.addSubview(r2ControlPointView)
-        view.addSubview(r3ControlPointView)
-        
-        layoutControlPoints(minimalHeight, waveHeight: 0, locationX: view.bounds.width / 2)
-        updateShapeLayer()
+        setupShapeLayer()
         
         displayLink = CADisplayLink(target: self, selector: #selector(updateShapeLayer))
         displayLink.add(to: .main, forMode: .default)
         displayLink.isPaused = true
     }
-    
-    let gradientLayer = CAGradientLayer()
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
@@ -103,6 +64,47 @@ class ViewController: UIViewController {
         gradientLayer.locations = [0, 1]
         view.layer.addSublayer(gradientLayer)
         gradientLayer.frame = view.bounds
+    }
+    
+    fileprivate func setupShapeLayer() {
+    
+        shapeLayer.frame = CGRect(x: 0, y: 0, width: view.bounds.width, height: minimalHeight)
+        shapeLayer.fillColor = AMColor.background.color.cgColor
+        
+        // Remove implicit layer animations
+        shapeLayer.actions = ["position": NSNull(), "bounds": NSNull(), "path": NSNull()]
+        
+        view.layer.addSublayer(shapeLayer)
+        
+        view.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(handlePan)))
+        
+        // Setup control points for bezier curve
+        l3ControlPointView.frame = CGRect(x: 0.0, y: 0.0, width: 3.0, height: 3.0)
+        l2ControlPointView.frame = CGRect(x: 0.0, y: 0.0, width: 3.0, height: 3.0)
+        l1ControlPointView.frame = CGRect(x: 0.0, y: 0.0, width: 3.0, height: 3.0)
+        cControlPointView.frame = CGRect(x: 0.0, y: 0.0, width: 3.0, height: 3.0)
+        r1ControlPointView.frame = CGRect(x: 0.0, y: 0.0, width: 3.0, height: 3.0)
+        r2ControlPointView.frame = CGRect(x: 0.0, y: 0.0, width: 3.0, height: 3.0)
+        r3ControlPointView.frame = CGRect(x: 0.0, y: 0.0, width: 3.0, height: 3.0)
+        
+        //        l3ControlPointView.backgroundColor = .red
+        //        l2ControlPointView.backgroundColor = .red
+        //        l1ControlPointView.backgroundColor = .red
+        //        cControlPointView.backgroundColor = .red
+        //        r1ControlPointView.backgroundColor = .red
+        //        r2ControlPointView.backgroundColor = .red
+        //        r3ControlPointView.backgroundColor = .red
+        
+        view.addSubview(l3ControlPointView)
+        view.addSubview(l2ControlPointView)
+        view.addSubview(l1ControlPointView)
+        view.addSubview(cControlPointView)
+        view.addSubview(r1ControlPointView)
+        view.addSubview(r2ControlPointView)
+        view.addSubview(r3ControlPointView)
+        
+        layoutControlPoints(minimalHeight, waveHeight: 0, locationX: view.bounds.width / 2)
+        updateShapeLayer()
     }
     
     @objc fileprivate func handlePan(gesture: UIPanGestureRecognizer) {
@@ -124,15 +126,6 @@ class ViewController: UIViewController {
                 self.layoutControlPoints(baseHeight, waveHeight: waveHeight, locationX: locationX)
                 self.updateShapeLayer()
             }
-            
-//            let additionalHeight = max(gesture.translation(in: view).y, 0)
-//            let waveHeight = min(additionalHeight * 0.6, maxWaveHeight)
-//            let baseHeight = minimalHeight + additionalHeight - waveHeight
-//            let locationX = gesture.location(in: gesture.view).x
-//
-//            layoutControlPoints(baseHeight, waveHeight: waveHeight, locationX: locationX)
-//
-//            updateShapeLayer()
         default:
             let centerY = location.y
             animating = true
@@ -150,7 +143,10 @@ class ViewController: UIViewController {
             }
         }
     }
-    
+}
+
+// MARK: - Bezier and CAShapeLayer manipulation methods in extension
+extension ViewController {
     private func currentPath() -> CGPath {
         let width = view.bounds.width
         let bezierPath = UIBezierPath()
@@ -192,11 +188,6 @@ class ViewController: UIViewController {
         r2ControlPointView.center = CGPoint(x: maxRightX - (rightPartWidth * 0.44), y: baseHeight)
         r3ControlPointView.center  = CGPoint(x: maxRightX, y: baseHeight)
     }
-    
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .lightContent
-    }
-    
 }
 
 
