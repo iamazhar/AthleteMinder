@@ -46,6 +46,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .white
         
+        setupGradientLayer()
+        
         shapeLayer.frame = CGRect(x: 0, y: 0, width: view.bounds.width, height: minimalHeight)
         shapeLayer.fillColor = AMColor.background.color.cgColor
         
@@ -62,13 +64,13 @@ class ViewController: UIViewController {
         r2ControlPointView.frame = CGRect(x: 0.0, y: 0.0, width: 3.0, height: 3.0)
         r3ControlPointView.frame = CGRect(x: 0.0, y: 0.0, width: 3.0, height: 3.0)
         
-        l3ControlPointView.backgroundColor = .red
-        l2ControlPointView.backgroundColor = .red
-        l1ControlPointView.backgroundColor = .red
-        cControlPointView.backgroundColor = .red
-        r1ControlPointView.backgroundColor = .red
-        r2ControlPointView.backgroundColor = .red
-        r3ControlPointView.backgroundColor = .red
+//        l3ControlPointView.backgroundColor = .red
+//        l2ControlPointView.backgroundColor = .red
+//        l1ControlPointView.backgroundColor = .red
+//        cControlPointView.backgroundColor = .red
+//        r1ControlPointView.backgroundColor = .red
+//        r2ControlPointView.backgroundColor = .red
+//        r3ControlPointView.backgroundColor = .red
         
         view.addSubview(l3ControlPointView)
         view.addSubview(l2ControlPointView)
@@ -84,6 +86,23 @@ class ViewController: UIViewController {
         displayLink = CADisplayLink(target: self, selector: #selector(updateShapeLayer))
         displayLink.add(to: .main, forMode: .default)
         displayLink.isPaused = true
+    }
+    
+    let gradientLayer = CAGradientLayer()
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        gradientLayer.frame = view.bounds
+    }
+    
+    fileprivate func setupGradientLayer() {
+        let topColor = #colorLiteral(red: 0.2431372549, green: 0.8156862745, blue: 0.3921568627, alpha: 1)
+        let bottomColor = #colorLiteral(red: 0.3607843137, green: 0.7921568627, blue: 0.5647058824, alpha: 1)
+        
+        gradientLayer.colors = [topColor.cgColor, bottomColor.cgColor]
+        gradientLayer.locations = [0, 1]
+        view.layer.addSublayer(gradientLayer)
+        gradientLayer.frame = view.bounds
     }
     
     @objc fileprivate func handlePan(gesture: UIPanGestureRecognizer) {
