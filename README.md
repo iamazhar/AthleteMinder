@@ -1,6 +1,6 @@
 # AthleteMinder
 
-Implementation of bouncy gesture control UI component.
+Implementation of bouncy gesture controlled UI component.
 
 ![Screen](AM-bounce.gif)
 
