@@ -2,6 +2,8 @@
 
 Implementation of bouncy gesture control UI component.
 
+![Screen](AM-bounce.gif)
+
 ## Authors
 
 * [Azhar Anwar](https:azharanwar.com)
