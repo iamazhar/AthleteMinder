@@ -4,7 +4,7 @@ Implementation of bouncy gesture control UI component.
 
 ## Authors
 
-* **Azhar Anwar** - [Azhar Anwar](https:azharanwar.com)
+* [Azhar Anwar](https:azharanwar.com)
 
 ## License
 
