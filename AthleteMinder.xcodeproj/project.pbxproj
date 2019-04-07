@@ -65,6 +65,8 @@
 		FF4542612258FD95006D9E7E /* DINNextLTPro-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF4542362258FD95006D9E7E /* DINNextLTPro-Medium.otf */; };
 		FF4542622258FD95006D9E7E /* DINNextLTPro-UltraLightCond.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF4542372258FD95006D9E7E /* DINNextLTPro-UltraLightCond.otf */; };
 		FF4542632258FD95006D9E7E /* DINNextLTPro-UltraLightCond.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF4542372258FD95006D9E7E /* DINNextLTPro-UltraLightCond.otf */; };
+		FFC84AB72259BEC60033874A /* SwipeableAnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC84AB62259BEC60033874A /* SwipeableAnswerView.swift */; };
+		FFC84AC02259C92C0033874A /* QuestionPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC84ABF2259C92C0033874A /* QuestionPageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,6 +132,8 @@
 		FF4542352258FD95006D9E7E /* DINNextLTPro-LightCondensed.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINNextLTPro-LightCondensed.otf"; sourceTree = "<group>"; };
 		FF4542362258FD95006D9E7E /* DINNextLTPro-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINNextLTPro-Medium.otf"; sourceTree = "<group>"; };
 		FF4542372258FD95006D9E7E /* DINNextLTPro-UltraLightCond.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINNextLTPro-UltraLightCond.otf"; sourceTree = "<group>"; };
+		FFC84AB62259BEC60033874A /* SwipeableAnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeableAnswerView.swift; sourceTree = "<group>"; };
+		FFC84ABF2259C92C0033874A /* QuestionPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionPageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +192,8 @@
 		FF440CF42259524300614507 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FFC84AB62259BEC60033874A /* SwipeableAnswerView.swift */,
+				FFC84ABF2259C92C0033874A /* QuestionPageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -410,10 +416,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF4542082258DD46006D9E7E /* SimpleBounce.swift in Sources */,
+				FFC84AB72259BEC60033874A /* SwipeableAnswerView.swift in Sources */,
 				FF34E731225609F200AC1B83 /* ViewController.swift in Sources */,
 				FF440CF3225943F100614507 /* RootPageViewController.swift in Sources */,
 				FF440CF12259415600614507 /* Extension+UIView.swift in Sources */,
 				FF34E72F225609F200AC1B83 /* AppDelegate.swift in Sources */,
+				FFC84AC02259C92C0033874A /* QuestionPageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

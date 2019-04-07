@@ -172,7 +172,8 @@ public enum AMFontSize {
     small,
     average,
     large,
-    larger
+    larger,
+    largest
     
     public var value: CGFloat {
         switch self {
@@ -184,6 +185,8 @@ public enum AMFontSize {
             return 24
         case .larger:
             return 28
+        case .largest:
+            return 34
         }
     }
 }
