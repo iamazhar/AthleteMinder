@@ -35,7 +35,9 @@ class RootPageViewController: UIPageViewController, UIPageViewControllerDelegate
         self.delegate = self
         
         if let firstViewController = viewControllerList.first {
-            self.setViewControllers([firstViewController], direction: .forward, animated: true, completion: nil)
+            let viewController = firstViewController as! ViewController
+            viewController.delegate = self
+            self.setViewControllers([viewController], direction: .forward, animated: true, completion: nil)
         }
     }
     
@@ -46,6 +48,15 @@ class RootPageViewController: UIPageViewController, UIPageViewControllerDelegate
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
+    }
+    
+    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+        if completed {
+            if let currentViewController = pageViewController.viewControllers?.first{
+                let viewController = currentViewController as! ViewController
+                viewController.delegate = self
+            }
+        }
     }
 }
 
@@ -75,5 +86,11 @@ extension RootPageViewController: UIPageViewControllerDataSource {
         guard viewControllerList.count > nextIndex else { return nil }
         
         return viewControllerList[nextIndex]
+    }
+}
+
+extension RootPageViewController: ViewControllerDelegate {
+    func viewController(didSwipe toLocation: CGFloat) {
+        print("DELEGATE BRO", toLocation)
     }
 }

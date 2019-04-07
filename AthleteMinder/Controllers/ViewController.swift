@@ -9,7 +9,13 @@
 import UIKit
 import AthleteMinderUI
 
+protocol ViewControllerDelegate {
+    func viewController(didSwipe toLocation: CGFloat)
+}
+
 class ViewController: UIViewController {
+    
+    public var delegate: ViewControllerDelegate?
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
@@ -120,13 +126,15 @@ class ViewController: UIViewController {
             UIView.animate(withDuration: 0.4, delay: 0, usingSpringWithDamping: 0.3, initialSpringVelocity: 0, options: [], animations: {
                 self.shapeLayer.frame = CGRect(x: 0, y: 0, width: self.view.bounds.width, height: location.y)
             }) { (_) in
-                let additionalHeight = translation.y
-                let waveHeight = additionalHeight * 0.20
+                
+                let waveHeight = translation.y * 0.20
                 let baseHeight = location.y - waveHeight
                 let locationX = location.x
                 
                 self.layoutControlPoints(baseHeight, waveHeight: waveHeight, locationX: locationX)
                 self.updateShapeLayer()
+                
+                self.delegate?.viewController(didSwipe: location.y)
             }
         default:
             let centerY = location.y
