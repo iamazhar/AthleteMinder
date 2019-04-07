@@ -11,6 +11,8 @@ import AthleteMinderUI
 
 class RootPageViewController: UIPageViewController, UIPageViewControllerDelegate {
     
+    let questionsData: [Question] = Question.allQuestions()
+    
     lazy var viewControllerList: [UIViewController] = {
         let vc1 = ViewController()
         let vc2 = ViewController()
@@ -38,6 +40,7 @@ class RootPageViewController: UIPageViewController, UIPageViewControllerDelegate
             let viewController = firstViewController as! ViewController
             viewController.delegate = self
             self.setViewControllers([viewController], direction: .forward, animated: true, completion: nil)
+            questionPageView.question = questionsData.first
         }
     }
     
@@ -48,15 +51,6 @@ class RootPageViewController: UIPageViewController, UIPageViewControllerDelegate
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
-    }
-    
-    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
-        if completed {
-            if let currentViewController = pageViewController.viewControllers?.first{
-                let viewController = currentViewController as! ViewController
-                viewController.delegate = self
-            }
-        }
     }
 }
 
@@ -91,6 +85,7 @@ extension RootPageViewController: UIPageViewControllerDataSource {
 
 extension RootPageViewController: ViewControllerDelegate {
     func viewController(didSwipe toLocation: CGFloat) {
-        print("DELEGATE BRO", toLocation)
+        // code to scale choice labels based on toLocation goes here
+        print(toLocation)
     }
 }

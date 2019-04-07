@@ -10,6 +10,17 @@ import UIKit
 import AthleteMinderUI
 
 class QuestionPageView: UIView {
+    
+    var question: Question! {
+        didSet {
+            questionLabel.text = self.question.question
+            choiceOneLabel.text = self.question.choiceOne
+            choiceTwoLabel.text = self.question.choiceTwo
+            
+            print(self.question.question)
+        }
+    }
+    
     lazy var navBarView: UIView = {
         let v = UIView()
         v.backgroundColor = AMColor.navigationBarBackground.color
@@ -40,7 +51,7 @@ class QuestionPageView: UIView {
         let label = UILabel()
         label.textAlignment = .center
         label.numberOfLines = 0
-        label.text = "Did you think about what you wanted to do and how to do it?".capitalized
+//        label.text = "Did you think about what you wanted to do and how to do it?".capitalized
         label.textColor = AMColor.primaryText.color
         label.alpha = 0.6
         label.font = AMFont.lightCondensed.of(size: AMFontSize.larger)
@@ -50,7 +61,7 @@ class QuestionPageView: UIView {
     let choiceOneLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .center
-        label.text = "bringing it".uppercased()
+//        label.text = "bringing it".uppercased()
         label.textColor = AMColor.primaryText.color
         label.font = AMFont.mediumCondensed.of(size: AMFontSize.largest)
         return label
@@ -59,7 +70,7 @@ class QuestionPageView: UIView {
     let choiceTwoLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .center
-        label.text = "winging it".uppercased()
+//        label.text = "winging it".uppercased()
         label.textColor = AMColor.primaryText.color
         label.font = AMFont.mediumCondensed.of(size: AMFontSize.largest)
         return label
