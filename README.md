@@ -1,4 +1,4 @@
-# AthleteMinder
+# Bouncy Drag Control
 
 Implementation of bouncy gesture controlled UI component.
 
